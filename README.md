@@ -10,18 +10,6 @@
 
 💡 **「关于」**
 
-- 🎓 旨在用于记录学习过程中的所思所想，并力图构建一个完善的知识体系
-
-- 🙏 
-
-- ⚡ 
-
-- 🔮 
-
-- 💬 我的公众号：
-
--  🦄 可以参考这个 [「开源社区系统 Echo」Gitee 官方推荐项目，目前已累计 1.1k+ star](https://gitee.com/veal98/Echo)，基于 SpringBoot + MyBatis + MySQL + Redis + Kafka + Elasticsearch + Spring Security + ... 并提供详细的开发文档和配套教程。
-
 
 ## 📑 计算机基础
 
@@ -86,7 +74,7 @@
 
 ### Phoenix
 
-- [Phoenix详解](大数据/Phoenix/Phoenix.md)
+- [Phoenix详解](数据开发/Phoenix/Phoenix.md)
 
 ### Spark
 
@@ -94,7 +82,9 @@
 
 ### Flink
 
+## 🚓 数据分析
 
+## 🚗 数据挖掘
 
 ## 🍵 Java
 
