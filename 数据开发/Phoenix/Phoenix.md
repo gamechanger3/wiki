@@ -1,3 +1,7 @@
+<p align="center">
+    <img width="280px" src="image/konglong/m1.png" >
+</p>
+
 # Phoenix
 
 ## Phoenix是什么
@@ -31,8 +35,8 @@ Phoenix = HBase + SQL
   > <--! 建议zk只写最后一个端口，不然phoenix建索引时可能会出错-->
   >
   > <property>
-  >      <name>hbase.zookeeper.quorum</name>
-  >      <value>hadoop01,hadoop02,hadoop03:2181</value>
+  >    <name>hbase.zookeeper.quorum</name>
+  >    <value>hadoop01,hadoop02,hadoop03:2181</value>
   > </property>
   >
   > <property>
@@ -103,9 +107,9 @@ Phoenix = HBase + SQL
 No rows affected (1.844 seconds)
 ```
 
-- 说明
+> [!Tip]
 
-  char类型必须添加长度限制
+>  char类型必须添加长度限制
   varchar 可以不用长度限制
   主键映射到 HBase 中会成为 Rowkey. 如果有多个主键(联合主键), 会把多个主键的值拼成 rowkey
   在 Phoenix 中, 默认会把表名,字段名等自动转换成大写. 如果要使用小写, 需要把他们用双引号括起来.
