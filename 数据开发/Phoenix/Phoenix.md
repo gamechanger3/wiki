@@ -108,14 +108,13 @@ No rows affected (1.844 seconds)
 ```
 
 > [!Tip]
-
 >  char类型必须添加长度限制
-  varchar 可以不用长度限制
-  主键映射到 HBase 中会成为 Rowkey. 如果有多个主键(联合主键), 会把多个主键的值拼成 rowkey
-  在 Phoenix 中, 默认会把表名,字段名等自动转换成大写. 如果要使用小写, 需要把他们用双引号括起来.
-  建表时注意数据类型
-
-http://phoenix.apache.org/language/datatypes.html
+>  varchar 可以不用长度限制
+>  主键映射到 HBase 中会成为 Rowkey. 如果有多个主键(联合主键), 会把多个主键的值拼成 rowkey
+>  在 Phoenix 中, 默认会把表名,字段名等自动转换成大写. 如果要使用小写, 需要把他们用双引号括起来.
+>  建表时注意数据类型
+> 
+>  http://phoenix.apache.org/language/datatypes.html
 
 #### 查看表结构
 
