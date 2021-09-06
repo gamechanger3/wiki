@@ -22,15 +22,15 @@ Phoenix = HBase + SQL
 
 ### 安装
 
-- 根据Hbase版本下载对应的phoenix包到HMaster节点
+1. 根据Hbase版本下载对应的phoenix包到HMaster节点
 
-- 解压 tar -zxvf phoenix-hbase-2.1-5.1.2-bin.tar.gz -C /opt/***
+2. 解压 tar -zxvf phoenix-hbase-2.1-5.1.2-bin.tar.gz -C /opt/***
 
-- [可选] 创建软链 ln -s /opt/***/phoenix-hbase-2.1-5.1.2-bin  phoenix
+3. [可选] 创建软链 ln -s /opt/***/phoenix-hbase-2.1-5.1.2-bin  phoenix
 
-- 把phoenix目录下的phoenix-server-hbase-2.1-5.1.2.jar复制到hbase每个regionserver的lib目录下
+4. 把phoenix目录下的phoenix-server-hbase-2.1-5.1.2.jar复制到hbase每个regionserver的lib目录下
 
-- 如果需要启用二级索引，需要修改Hbase regionserver的配置文件hbase-site.xml，并将hbase-site.xml复制到phoenix/bin目录下，还有hadoop的core-site.xml、hdfs-site.xml也复制到phoenix/bin目录下
+5. 如果需要启用二级索引，需要修改Hbase regionserver的配置文件hbase-site.xml，并将hbase-site.xml复制到phoenix/bin目录下，还有hadoop的core-site.xml、hdfs-site.xml也复制到phoenix/bin目录下
 
   > <--! 建议zk只写最后一个端口，不然phoenix建索引时可能会出错-->
   >
@@ -56,7 +56,7 @@ Phoenix = HBase + SQL
   >   <description>Factory to create the Phoenix RPC Scheduler that uses separate queues for index and metadata updates</description>
   > </property>
 
-- **注**：如果phoenix版本低，还需配置HMaster的hbase-site.xml，配置参考网上
+6. **注**：如果phoenix版本低，还需配置HMaster的hbase-site.xml，配置参考网上
 
 ### 启动phoenix
 
