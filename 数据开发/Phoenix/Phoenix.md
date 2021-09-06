@@ -297,7 +297,7 @@ UPSERT INTO US_POPULATION(STATE, CITY,POPULATION) SELECT 'CA','Los Angeles_updat
 4 rows selected (0.032 seconds)
 ```
 
-> 如上，如果主键记录不存在会直接insert，如果存在会update
+>[!Note] 如上，如果主键记录不存在会直接insert，如果存在会update
 
 ### Phoenix表映射
 
@@ -345,7 +345,7 @@ ER', COMPRESSION => 'NONE', MIN_VERSIONS => '0', BLOCKCACHE => 'true', BLOCKSIZE
 
 #### 视图映射
 
-> Phoenix 创建的视图是只读的, 所以只能用来查询, 无法通过视图对数据进行修改等操作.
+>[!Note] Phoenix 创建的视图是只读的, 所以只能用来查询, 无法通过视图对数据进行修改等操作.
 
 ```sql
 0: jdbc:phoenix:mini1,mini2,mini3:2181> create view "test"(empid varchar primary key,"name"."firstname" varchar,"name"."lastname" varchar,"company"."name" varchar,"company"."address" varchar);
@@ -380,7 +380,7 @@ No rows selected (0.126 seconds)
 
 #### 表映射
 
-> 表映射可以更改Hbase中表数据
+>[!Note] 表映射可以更改Hbase中表数据
 
 - HBase中表不存在时
        Hbase中表不存在时，可以直接使用 create table 指令创建需要的表,系统将会自动在 Phoenix 和 HBase 中创建 person_infomation 的表，并会根据指令内的参数对表结构进行初始化。
