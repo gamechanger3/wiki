@@ -12,7 +12,7 @@
 <br>
 <br>
 
-[开始阅读](README.md)
+[开始阅读](DATA.md)
 
 <!-- background image -->
 
