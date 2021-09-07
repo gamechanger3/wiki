@@ -75,6 +75,20 @@
 - [Hadoop（五）HDFS基础](数据开发/Hadoop/Hadoop（五）HDFS基础.md)
 - [Hadoop（六）HDFS深入理解](数据开发/Hadoop/Hadoop（六）HDFS深入理解.md)
 - [Hadoop（七）HDFS读写详解](数据开发/Hadoop/Hadoop（七）HDFS读写详解.md)
+- [Hadoop（八）HDFS各种角色](数据开发/Hadoop/Hadoop（八）HDFS各种角色.md)
+- [Hadoop（七）HDFS读写详解](数据开发/Hadoop/Hadoop（七）HDFS读写详解.md)
+- [Hadoop（九）MR核心运行机制](数据开发/Hadoop/Hadoop（九）MR核心运行机制.md)
+- [Hadoop（十）MR的shuffle详解](数据开发/Hadoop/Hadoop（十）MR的shuffle详解.md)
+- [Hadoop（十一）YARN的资源调度](数据开发/Hadoop/Hadoop（十一）YARN的资源调度.md)
+- [Hadoop（十二）MR示例](数据开发/Hadoop/Hadoop（十二）MR示例.md)
+
+### Zookeeper
+
+- [Zookeeper（一）初识](数据开发/Zookeeper/Zookeeper（一）初识.md)
+- [Zookeeper（二）集群搭建](数据开发/Zookeeper/Zookeeper（二）集群搭建.md)
+- [Zookeeper（三）shell操作](数据开发/Zookeeper/Zookeeper（三）shell操作.md)
+- [ZooKeeper（四）ZooKeeper设计特点及典型应用场景](数据开发/Zookeeper/ZooKeeper（四）ZooKeeper设计特点及典型应用场景.md)
+- [Zookeeper（五）原理解析](数据开发/Zookeeper/Zookeeper（五）原理解析.md)
 
 ### Hive
 
