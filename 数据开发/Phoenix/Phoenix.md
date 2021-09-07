@@ -26,7 +26,7 @@ Phoenix = HBase + SQL
 
 2. 解压 tar -zxvf phoenix-hbase-2.1-5.1.2-bin.tar.gz -C /opt/***
 
-3. [可选] 创建软链 ln -s /opt/***/phoenix-hbase-2.1-5.1.2-bin  phoenix
+3. [可选] 创建软链 ln -s /opt/***/phoenix-hbase-2.1-5.1.2-bin  phoenix 
 
 4. 把phoenix目录下的phoenix-server-hbase-2.1-5.1.2.jar复制到hbase每个regionserver的lib目录下
 
@@ -434,6 +434,22 @@ No rows affected (6.22 seconds)
 ### phoenix函数
 
 http://phoenix.apache.org/language/functions.html
+
+使用示例：
+
+```sql
+select
+        ss_customer_sk,
+        first_value(ss_sold_date_sk)
+within group
+        (order by ss_sold_date_sk asc) as f
+from
+        store_sales
+group by
+        ss_customer_sk;
+```
+
+**注：**order by后面的asc/desc不能少
 
 网络上没有很好的使用用例，可去jira上看issue
 
