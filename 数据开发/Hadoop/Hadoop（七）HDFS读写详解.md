@@ -1,5 +1,5 @@
 <p align="center">
-    <img width="280px" src="image/konglong/m3.png" >
+    <img width="280px" src="image/konglong/m7.png" >
 </p>
 
 # Hadoop（七）HDFS读写详解

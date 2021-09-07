@@ -1,5 +1,5 @@
 <p align="center">
-    <img width="280px" src="image/konglong/m2.png" >
+    <img width="280px" src="image/konglong/m4.png" >
 </p>
 
 # Hadoop（四）Hadoop shell常用命令
