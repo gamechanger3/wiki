@@ -3,7 +3,7 @@
 </p>
 
 
-# [Hadoop（一）理论基础和逻辑思维](https://www.cnblogs.com/qingyunzong/p/8487180.html)
+# Hadoop（一）理论基础和逻辑思维
 
 ## 三个题目
 

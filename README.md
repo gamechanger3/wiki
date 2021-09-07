@@ -69,6 +69,8 @@
 ### Hadoop
 
 - [Hadoop（一）理论基础和逻辑思维](数据开发/Hadoop/Hadoop（一）理论基础和逻辑思维.md)
+- [Hadoop（二）完全分布式搭建](数据开发/Hadoop/Hadoop（二）完全分布式搭建.md)
+- [Hadoop(三) HA 模式集群搭建](数据开发/Hadoop/Hadoop(三) HA 模式集群搭建.md)
 
 ### Hive
 
