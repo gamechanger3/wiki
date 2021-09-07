@@ -18,9 +18,9 @@
 
 通过测试发现class的默认加载顺序如下：
 
-\1. SystemClasspath -- Spark安装时候提供的依赖包
+1. SystemClasspath -- Spark安装时候提供的依赖包
 
-\2. UserClassPath  -- Spark-submit --jars 提交的依赖包 或用户的app.jar
+2. UserClassPath  -- Spark-submit --jars 提交的依赖包 或用户的app.jar
 
  
 
@@ -47,8 +47,6 @@ spark-submit --jars 在默认spark环境里没有需要的包时，自己上传�
 ![img](https://img-blog.csdnimg.cn/2020111117383756.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Fkb3JlY2hlbg==,size_16,color_FFFFFF,t_70)
 
  
-
-#  
 
 ## 依赖包冲突解决方案
 
