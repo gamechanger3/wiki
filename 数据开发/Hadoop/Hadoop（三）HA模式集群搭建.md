@@ -1,6 +1,7 @@
 <p align="center">
     <img width="280px" src="image/konglong/m3.png" >
 </p>
+
 # Hadoop(三) HA 模式集群搭建
 
 ## 一 、 Hadoop 集群架构设计

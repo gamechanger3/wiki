@@ -71,6 +71,10 @@
 - [Hadoop（一）理论基础和逻辑思维](数据开发/Hadoop/Hadoop（一）理论基础和逻辑思维.md)
 - [Hadoop（二）完全分布式搭建](数据开发/Hadoop/Hadoop（二）完全分布式搭建.md)
 - [Hadoop（三）HA模式集群搭建](数据开发/Hadoop/Hadoop（三）HA模式集群搭建.md)
+- [Hadoop（四）Hadoop-shell常用命令](数据开发/Hadoop/Hadoop（四）Hadoop-shell常用命令.md)
+- [Hadoop（五）HDFS基础](数据开发/Hadoop/Hadoop（五）HDFS基础.md)
+- [Hadoop（六）HDFS深入理解](数据开发/Hadoop/Hadoop（六）HDFS深入理解.md)
+- [Hadoop（七）HDFS读写详解](数据开发/Hadoop/Hadoop（七）HDFS读写详解.md)
 
 ### Hive
 

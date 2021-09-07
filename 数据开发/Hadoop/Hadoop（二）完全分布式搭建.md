@@ -1,6 +1,7 @@
 <p align="center">
     <img width="280px" src="image/konglong/m2.png" >
 </p>
+
 # Hadoop（二）完全分布式搭建
 
 ## 概念了解
@@ -100,7 +101,7 @@ export JAVA_HOME=/usr/local/jdk1.8.0_73
 
 ![img](https://images2018.cnblogs.com/blog/1228818/201803/1228818-20180303104035548-3546092.png)
 
-B.　core-site.xml
+#### B. core-site.xml
 
 ```
 [hadoop@hadoop1 hadoop]$ vi core-site.xml 
@@ -127,7 +128,7 @@ hadoop.tmp.dir : hadoop集群在工作的时候存储的一些临时文件的目
 
  ![img](https://images2018.cnblogs.com/blog/1228818/201803/1228818-20180303104511807-906110891.png)
 
-C.　hdfs-site.xml
+#### C.　hdfs-site.xml
 
 ```
 [hadoop@hadoop1 hadoop]$ vi hdfs-site.xml 
@@ -175,7 +176,7 @@ dfs.secondary.http.address：secondarynamenode 运行节点的信息，和 namen
 
 ![img](https://images2018.cnblogs.com/blog/1228818/201803/1228818-20180303104911508-1011649393.png)
 
-D.　mapred-site.xml
+#### D.　mapred-site.xml
 
 ```
 [hadoop@hadoop1 hadoop]$ cp mapred-site.xml.template mapred-site.xml
@@ -199,7 +200,7 @@ D.　mapred-site.xml
 
 ![img](https://images2018.cnblogs.com/blog/1228818/201803/1228818-20180303105128551-1997748350.png)
 
-E.　yarn-site.xml
+#### E.　yarn-site.xml
 
 ```
 [hadoop@hadoop1 hadoop]$ vi yarn-site.xml 
@@ -234,7 +235,7 @@ E.　yarn-site.xml
 
  ![img](https://images2018.cnblogs.com/blog/1228818/201803/1228818-20180303105358230-1169766109.png)
 
-F.　slaves
+#### F.　slaves
 
 ```
 [hadoop@hadoop1 hadoop]$ vi slaves 
