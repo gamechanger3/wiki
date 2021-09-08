@@ -68,29 +68,46 @@
 
 ### Hadoop
 
-- [Hadoop（一）理论基础和逻辑思维](数据开发/Hadoop/Hadoop（一）理论基础和逻辑思维.md)
-- [Hadoop（二）完全分布式搭建](数据开发/Hadoop/Hadoop（二）完全分布式搭建.md)
-- [Hadoop（三）HA模式集群搭建](数据开发/Hadoop/Hadoop（三）HA模式集群搭建.md)
-- [Hadoop（四）Hadoop-shell常用命令](数据开发/Hadoop/Hadoop（四）Hadoop-shell常用命令.md)
-- [Hadoop（五）HDFS基础](数据开发/Hadoop/Hadoop（五）HDFS基础.md)
-- [Hadoop（六）HDFS深入理解](数据开发/Hadoop/Hadoop（六）HDFS深入理解.md)
-- [Hadoop（七）HDFS读写详解](数据开发/Hadoop/Hadoop（七）HDFS读写详解.md)
-- [Hadoop（八）HDFS各种角色](数据开发/Hadoop/Hadoop（八）HDFS各种角色.md)
-- [Hadoop（七）HDFS读写详解](数据开发/Hadoop/Hadoop（七）HDFS读写详解.md)
-- [Hadoop（九）MR核心运行机制](数据开发/Hadoop/Hadoop（九）MR核心运行机制.md)
-- [Hadoop（十）MR的shuffle详解](数据开发/Hadoop/Hadoop（十）MR的shuffle详解.md)
-- [Hadoop（十一）YARN的资源调度](数据开发/Hadoop/Hadoop（十一）YARN的资源调度.md)
-- [Hadoop（十二）MR示例](数据开发/Hadoop/Hadoop（十二）MR示例.md)
+- [Hadoop（一）理论基础和逻辑思维](数据开发/Hadoop/Hadoop（1）理论基础和逻辑思维.md)
+- [Hadoop（二）完全分布式搭建](数据开发/Hadoop/Hadoop（2）完全分布式搭建.md)
+- [Hadoop（三）HA模式集群搭建](数据开发/Hadoop/Hadoop（3）HA模式集群搭建.md)
+- [Hadoop（四）Hadoop-shell常用命令](数据开发/Hadoop/Hadoop（4）Hadoop-shell常用命令.md)
+- [Hadoop（五）HDFS基础](数据开发/Hadoop/Hadoop（5）HDFS基础.md)
+- [Hadoop（六）HDFS深入理解](数据开发/Hadoop/Hadoop（6）HDFS深入理解.md)
+- [Hadoop（七）HDFS读写详解](数据开发/Hadoop/Hadoop（7）HDFS读写详解.md)
+- [Hadoop（八）HDFS各种角色](数据开发/Hadoop/Hadoop（8）HDFS各种角色.md)
+- [Hadoop（九）MR核心运行机制](数据开发/Hadoop/Hadoop（9）MR核心运行机制.md)
+- [Hadoop（十）MR的shuffle详解](数据开发/Hadoop/Hadoop（10）MR的shuffle详解.md)
+- [Hadoop（十一）YARN的资源调度](数据开发/Hadoop/Hadoop（11）YARN的资源调度.md)
+- [Hadoop（十二）MR示例](数据开发/Hadoop/Hadoop（12）MR示例.md)
 
 ### Zookeeper
 
-- [Zookeeper（一）初识](数据开发/Zookeeper/Zookeeper（一）初识.md)
-- [Zookeeper（二）集群搭建](数据开发/Zookeeper/Zookeeper（二）集群搭建.md)
-- [Zookeeper（三）shell操作](数据开发/Zookeeper/Zookeeper（三）shell操作.md)
-- [ZooKeeper（四）ZooKeeper设计特点及典型应用场景](数据开发/Zookeeper/ZooKeeper（四）ZooKeeper设计特点及典型应用场景.md)
-- [Zookeeper（五）原理解析](数据开发/Zookeeper/Zookeeper（五）原理解析.md)
+- [Zookeeper（一）初识](数据开发/Zookeeper/Zookeeper（1）初识.md)
+- [Zookeeper（二）集群搭建](数据开发/Zookeeper/Zookeeper（2）集群搭建.md)
+- [Zookeeper（三）shell操作](数据开发/Zookeeper/Zookeeper（3）shell操作.md)
+- [ZooKeeper（四）ZooKeeper设计特点及典型应用场景](数据开发/Zookeeper/Zookeeper（4）ZooKeeper设计特点及典型应用场景.md)
+- [Zookeeper（五）原理解析](数据开发/Zookeeper/Zookeeper（5）原理解析.md)
 
 ### Hive
+
+- [Hive（一）Hive初识](数据开发/Hive/Hive（1）Hive初识.md)
+- [Hive（二）Hive安装](数据开发/Hive/Hive（2）Hive安装.md)
+- [Hive（三）Hive元数据信息](数据开发/Hive/Hive（3）Hive元数据信息.md)
+- [Hive（四）Hive的3种连接方式](数据开发/Hive/Hive（4）Hive的3种连接方式.md)
+- [Hive（五）Hive SQL之数据类型和存储格式](数据开发/Hive/Hive（5）Hive-SQL之数据类型和存储格式.md)
+- [Hive（六）Hive的DDL操作](数据开发/Hive/Hive（6）Hive的DDL操作.md)
+- [Hive（七）Hive的内置函数](数据开发/Hive/Hive（7）Hive的内置函数.md)
+- [Hive（八）Hive的高级操作](数据开发/Hive/Hive（8）Hive的高级操作.md)
+- [Hive（九）Hive SQL面试题](数据开发/Hive/Hive（9）Hive-SQL面试题.md)
+- [Hive（十）Hive SQL练习之影评案例](数据开发/Hive/Hive（10）Hive-SQL练习之影评案例.md)
+- [Hive（十一）Hive窗口分析函数（一）SUM、AVG、MIN、MAX](数据开发/Hive/Hive（11）Hive窗口分析函数（一）SUM、AVG、MIN、MAX.md)
+- [Hive（十二）Hive分析窗口函数(二)NTILE,ROW_NUMBER,RANK,DENSE_RANK](数据开发/Hive/Hive（12）Hive分析窗口函数(二)NTILE,ROW_NUMBER,RANK,DENSE_RANK.md)
+- [Hive（十三）Hive分析窗口函数(三) LAG、LEAD、FIRST_VALUE和LAST_VALUE](数据开发/Hive/Hive（13）Hive分析窗口函数(三) LAG、LEAD、FIRST_VALUE和LAST_VALUE.md)
+- [Hive（十四）Hive的shell操作](数据开发/Hive/Hive（14）Hive的shell操作.md)
+- [Hive（十五）Hive的数据倾斜](数据开发/Hive/Hive（15）Hive的数据倾斜.md)
+- [Hive（十六）Hive执行过程分析](数据开发/Hive/Hive（16）Hive执行过程分析.md)
+- [Hive（十七）Hive优化](数据开发/Hive/Hive（17）Hive优化.md)
 
 ### HBase
 
