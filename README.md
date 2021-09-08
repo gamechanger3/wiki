@@ -86,7 +86,7 @@
 - [Zookeeper（一）初识](数据开发/Zookeeper/Zookeeper（1）初识.md)
 - [Zookeeper（二）集群搭建](数据开发/Zookeeper/Zookeeper（2）集群搭建.md)
 - [Zookeeper（三）shell操作](数据开发/Zookeeper/Zookeeper（3）shell操作.md)
-- [ZooKeeper（四）ZooKeeper设计特点及典型应用场景](数据开发/Zookeeper/Zookeeper（4）ZooKeeper设计特点及典型应用场景.md)
+- [Zookeeper（四）ZooKeeper设计特点及典型应用场景](数据开发/Zookeeper/Zookeeper（4）ZooKeeper设计特点及典型应用场景.md)
 - [Zookeeper（五）原理解析](数据开发/Zookeeper/Zookeeper（5）原理解析.md)
 
 ### Hive
@@ -102,8 +102,8 @@
 - [Hive（九）Hive SQL面试题](数据开发/Hive/Hive（9）Hive-SQL面试题.md)
 - [Hive（十）Hive SQL练习之影评案例](数据开发/Hive/Hive（10）Hive-SQL练习之影评案例.md)
 - [Hive（十一）Hive窗口分析函数（一）SUM、AVG、MIN、MAX](数据开发/Hive/Hive（11）Hive窗口分析函数（一）SUM、AVG、MIN、MAX.md)
-- [Hive（十二）Hive分析窗口函数(二)NTILE,ROW_NUMBER,RANK,DENSE_RANK](数据开发/Hive/Hive（12）Hive分析窗口函数(二)NTILE,ROW_NUMBER,RANK,DENSE_RANK.md)
-- [Hive（十三）Hive分析窗口函数(三) LAG、LEAD、FIRST_VALUE和LAST_VALUE](数据开发/Hive/Hive（13）Hive分析窗口函数(三) LAG、LEAD、FIRST_VALUE和LAST_VALUE.md)
+- [Hive（十二）Hive分析窗口函数（二）NTILE,ROW_NUMBER,RANK,DENSE_RANK](数据开发/Hive/Hive（12）Hive分析窗口函数（二）NTILE,ROW_NUMBER,RANK,DENSE_RANK.md)
+- [Hive（十三）Hive分析窗口函数（三）LAG、LEAD、FIRST_VALUE和LAST_VALUE](数据开发/Hive/Hive（13）Hive分析窗口函数（三）LAG、LEAD、FIRST_VALUE和LAST_VALUE.md)
 - [Hive（十四）Hive的shell操作](数据开发/Hive/Hive（14）Hive的shell操作.md)
 - [Hive（十五）Hive的数据倾斜](数据开发/Hive/Hive（15）Hive的数据倾斜.md)
 - [Hive（十六）Hive执行过程分析](数据开发/Hive/Hive（16）Hive执行过程分析.md)
