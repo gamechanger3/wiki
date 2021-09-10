@@ -110,6 +110,14 @@
 - [Hive（十七）Hive优化](数据开发/Hive/Hive（17）Hive优化.md)
 
 ### HBase
+- [HBase（1）HBase基础介绍](数据开发/HBase/HBase（1）HBase基础介绍.md)
+- [HBase（2）HBase集群安装](数据开发/HBase/HBase（2）HBase集群安装.md)
+- [HBase（3）HBase-Shell操作](数据开发/HBase/HBase（3）HBase-Shell操作.md)
+- [HBase（4）HBase的API操作](数据开发/HBase/HBase（4）HBase的API操作.md)
+- [HBase（5）HBase-过滤器](数据开发/HBase/HBase（5）HBase-过滤器.md)
+- [HBase（6）HBase原理](数据开发/HBase/HBase（6）HBase原理.md)
+- [HBase（7）HBase表设计原则](数据开发/HBase/HBase（7）HBase表设计原则.md)
+- [HBase（8）HBase的协处理器](数据开发/HBase/HBase（8）HBase的协处理器.md)
 
 ### Phoenix
 
