@@ -110,14 +110,14 @@
 - [Hive（十七）Hive优化](数据开发/Hive/Hive（17）Hive优化.md)
 
 ### HBase
-- [HBase（1）HBase基础介绍](数据开发/HBase/HBase（1）HBase基础介绍.md)
-- [HBase（2）HBase集群安装](数据开发/HBase/HBase（2）HBase集群安装.md)
-- [HBase（3）HBase-Shell操作](数据开发/HBase/HBase（3）HBase-Shell操作.md)
-- [HBase（4）HBase的API操作](数据开发/HBase/HBase（4）HBase的API操作.md)
-- [HBase（5）HBase-过滤器](数据开发/HBase/HBase（5）HBase-过滤器.md)
-- [HBase（6）HBase原理](数据开发/HBase/HBase（6）HBase原理.md)
-- [HBase（7）HBase表设计原则](数据开发/HBase/HBase（7）HBase表设计原则.md)
-- [HBase（8）HBase的协处理器](数据开发/HBase/HBase（8）HBase的协处理器.md)
+- [HBase（一）HBase基础介绍](数据开发/HBase/HBase（1）HBase基础介绍.md)
+- [HBase（二）HBase集群安装](数据开发/HBase/HBase（2）HBase集群安装.md)
+- [HBase（三）HBase-Shell操作](数据开发/HBase/HBase（3）HBase-Shell操作.md)
+- [HBase（四）HBase的API操作](数据开发/HBase/HBase（4）HBase的API操作.md)
+- [HBase（五）HBase-过滤器](数据开发/HBase/HBase（5）HBase-过滤器.md)
+- [HBase（六）HBase原理](数据开发/HBase/HBase（6）HBase原理.md)
+- [HBase（七）HBase表设计原则](数据开发/HBase/HBase（7）HBase表设计原则.md)
+- [HBase（八）HBase的协处理器](数据开发/HBase/HBase（8）HBase的协处理器.md)
 
 ### Phoenix
 
@@ -126,6 +126,11 @@
 ### Spark
 
 ### Kafka
+- [Kafka（一）Kafka简介](数据开发/Kafka/Kafka（1）Kafka简介.md)
+- [Kafka（二）Kafka架构](数据开发/Kafka/Kafka（2）Kafka架构.md)
+- [Kafka（三）Kafka高可用](数据开发/Kafka/Kafka（3）Kafka高可用.md)
+- [Kafka（四）Kafka安装](数据开发/Kafka/Kafka（4）Kafka安装.md)
+- [Kafka（五）Kafka在zookeeper中的存储](数据开发/Kafka/Kafka（5）Kafka在zookeeper中的存储.md)
 
 ### Pulsar
 
@@ -134,7 +139,6 @@
 ### Flink
 
 ### 其他
-
 - [Maven Jar包冲突解决](other/Maven-Jar包冲突解决.md)
 - [Spark的jar包冲突终极解决方案](other/Spark的jar包冲突终极解决方案.md)
 
