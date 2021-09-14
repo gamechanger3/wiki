@@ -137,6 +137,7 @@
 - [Hadoop（十）MR的shuffle详解](数据开发/Hadoop/Hadoop（10）MR的shuffle详解.md)
 - [Hadoop（十一）YARN的资源调度](数据开发/Hadoop/Hadoop（11）YARN的资源调度.md)
 - [Hadoop（十二）MR示例](数据开发/Hadoop/Hadoop（12）MR示例.md)
+- [Hadoop（最后）Hadoop面试题](数据开发/Hadoop/Hadoop面试题.md)
 
 ### Zookeeper
 
