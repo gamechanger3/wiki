@@ -1,4 +1,8 @@
-# Hadoop重难点：Shuffle过程中的环形缓冲区
+<p align="center">
+    <img width="280px" src="image/konglong/m16.png" >
+</p>
+
+# Hadoop（13）Hadoop重难点：Shuffle过程中的环形缓冲区
 
 环形队列是在实际编程极为有用的数据结构，它是一个首尾相连的FIFO的数据结构，采用数组的线性空间,数据组织简单。能很快知道队列是否满为空。能以很快速度的来存取数据。 因为有简单高效的原因，甚至在硬件都实现了环形队列。
 
