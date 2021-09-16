@@ -176,6 +176,10 @@
 - [HBase（六）HBase原理](数据开发/HBase/HBase（6）HBase原理.md)
 - [HBase（七）HBase表设计原则](数据开发/HBase/HBase（7）HBase表设计原则.md)
 - [HBase（八）HBase的协处理器](数据开发/HBase/HBase（8）HBase的协处理器.md)
+- [HBase（九）HFile原理](数据开发/HBase/HBase（9）HFile原理.md)
+- [HBase（十）一条数据的HBase之旅-Write全流程](数据开发/HBase/HBase（10）一条数据的HBase之旅-Write全流程.md)
+- [HBase（十一）一条数据的HBase之旅-Flush与Compaction](数据开发/HBase/HBase（11）一条数据的HBase之旅-Flush与Compaction.md)
+- [HBase（十二）图解HBase读取流程](数据开发/HBase/HBase（12）图解HBase读取流程.md)
 
 ### Phoenix
 
