@@ -420,8 +420,6 @@ round(3.1415,1)=3.1
 
 MOD
 
-![img](https://gitee.com/gamechanger1/image/raw/master/wps76.png)
-
 ## 时间序列类
 
 专门用于处理时间格式以及转换。
