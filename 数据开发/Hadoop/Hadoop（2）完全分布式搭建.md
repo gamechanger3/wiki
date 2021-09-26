@@ -37,7 +37,7 @@ Hadoop集群中各个角色的名称：
 
 使用4台CentOS-6.7虚拟机进行集群搭建
 
-![img](https://images2018.cnblogs.com/blog/1228818/201803/1228818-20180303115310907-1555873629.png)
+![img](https://gitee.com/gamechanger1/image/raw/master/1228818-20180303115310907-1555873629.png)
 
 
 
@@ -85,7 +85,7 @@ hadoop-2.7.5-centos-6.7.tar.gz
 
 配置文件目录：/home/hadoop/apps/hadoop-2.7.5/etc/hadoop
 
-![img](https://images2018.cnblogs.com/blog/1228818/201803/1228818-20180303103331419-2007341529.png)
+![img](https://gitee.com/gamechanger1/image/raw/master/1228818-20180303103331419-2007341529.png)
 
 #### A.　hadoop-env.sh
 
@@ -99,7 +99,7 @@ hadoop-2.7.5-centos-6.7.tar.gz
 export JAVA_HOME=/usr/local/jdk1.8.0_73
 ```
 
-![img](https://images2018.cnblogs.com/blog/1228818/201803/1228818-20180303104035548-3546092.png)
+![img](https://gitee.com/gamechanger1/image/raw/master/1228818-20180303104035548-3546092.png)
 
 #### B. core-site.xml
 
@@ -126,7 +126,7 @@ hadoop.tmp.dir : hadoop集群在工作的时候存储的一些临时文件的目
 </configuration>
 ```
 
- ![img](https://images2018.cnblogs.com/blog/1228818/201803/1228818-20180303104511807-906110891.png)
+ ![img](https://gitee.com/gamechanger1/image/raw/master/1228818-20180303104511807-906110891.png)
 
 #### C.　hdfs-site.xml
 
@@ -174,7 +174,7 @@ dfs.secondary.http.address：secondarynamenode 运行节点的信息，和 namen
 
 
 
-![img](https://images2018.cnblogs.com/blog/1228818/201803/1228818-20180303104911508-1011649393.png)
+![img](https://gitee.com/gamechanger1/image/raw/master/1228818-20180303104911508-1011649393.png)
 
 #### D.　mapred-site.xml
 
@@ -198,7 +198,7 @@ dfs.secondary.http.address：secondarynamenode 运行节点的信息，和 namen
 
 
 
-![img](https://images2018.cnblogs.com/blog/1228818/201803/1228818-20180303105128551-1997748350.png)
+![img](https://gitee.com/gamechanger1/image/raw/master/1228818-20180303105128551-1997748350.png)
 
 #### E.　yarn-site.xml
 
@@ -233,7 +233,7 @@ dfs.secondary.http.address：secondarynamenode 运行节点的信息，和 namen
 
 
 
- ![img](https://images2018.cnblogs.com/blog/1228818/201803/1228818-20180303105358230-1169766109.png)
+ ![img](https://gitee.com/gamechanger1/image/raw/master/1228818-20180303105358230-1169766109.png)
 
 #### F.　slaves
 
@@ -283,7 +283,7 @@ export HADOOP_HOME=/home/hadoop/apps/hadoop-2.7.5
 export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin:
 ```
 
-![img](https://images2018.cnblogs.com/blog/1228818/201803/1228818-20180303110711007-1612467070.png)
+![img](https://gitee.com/gamechanger1/image/raw/master/1228818-20180303110711007-1612467070.png)
 
 使环境变量生效
 
@@ -310,7 +310,7 @@ This command was run using /home/hadoop/apps/hadoop-2.7.5/share/hadoop/common/ha
 
 
 
-![img](https://images2018.cnblogs.com/blog/1228818/201803/1228818-20180303111035963-1326015903.png)
+![img](https://gitee.com/gamechanger1/image/raw/master/1228818-20180303111035963-1326015903.png)
 
 
 
@@ -322,7 +322,7 @@ This command was run using /home/hadoop/apps/hadoop-2.7.5/share/hadoop/common/ha
 [hadoop@hadoop1 ~]$ hadoop namenode -format
 ```
 
-![img](https://images2018.cnblogs.com/blog/1228818/201803/1228818-20180303111431844-1654882274.png)
+![img](https://gitee.com/gamechanger1/image/raw/master/1228818-20180303111431844-1654882274.png)
 
 
 
@@ -345,7 +345,7 @@ hadoop3: starting secondarynamenode, logging to /home/hadoop/apps/hadoop-2.7.5/l
 [hadoop@hadoop1 ~]$ 
 ```
 
-![img](https://images2018.cnblogs.com/blog/1228818/201803/1228818-20180303111708314-1318291140.png)
+![img](https://gitee.com/gamechanger1/image/raw/master/1228818-20180303111708314-1318291140.png)
 
 B.　启动YARN
 
@@ -364,7 +364,7 @@ hadoop1: starting nodemanager, logging to /home/hadoop/apps/hadoop-2.7.5/logs/ya
 
 
 
-![img](https://images2018.cnblogs.com/blog/1228818/201803/1228818-20180303112021638-408158798.png)
+![img](https://gitee.com/gamechanger1/image/raw/master/1228818-20180303112021638-408158798.png)
 
 
 
@@ -372,19 +372,19 @@ hadoop1: starting nodemanager, logging to /home/hadoop/apps/hadoop-2.7.5/logs/ya
 
 hadoop1
 
-![img](https://images2018.cnblogs.com/blog/1228818/201803/1228818-20180303112120800-1423701937.png)
+![img](https://gitee.com/gamechanger1/image/raw/master/1228818-20180303112120800-1423701937.png)
 
 hadoop2
 
-![img](https://images2018.cnblogs.com/blog/1228818/201803/1228818-20180303112139568-661988009.png)
+![img](https://gitee.com/gamechanger1/image/raw/master/1228818-20180303112139568-661988009.png)
 
 hadoop3
 
-![img](https://images2018.cnblogs.com/blog/1228818/201803/1228818-20180303112211083-74589397.png)
+![img](https://gitee.com/gamechanger1/image/raw/master/1228818-20180303112211083-74589397.png)
 
 hadoop4
 
-![img](https://images2018.cnblogs.com/blog/1228818/201803/1228818-20180303112225280-1304512419.png)
+![img](https://gitee.com/gamechanger1/image/raw/master/1228818-20180303112225280-1304512419.png)
 
 
 
@@ -401,19 +401,19 @@ YARN ： http://hadoop05:8088
 
 #### HDFS界面
 
-![img](https://images2018.cnblogs.com/blog/1228818/201803/1228818-20180303112510116-894901884.png)
+![img](https://gitee.com/gamechanger1/image/raw/master/1228818-20180303112510116-894901884.png)
 
 点击Datanodes可以查看四个节点
 
-![img](https://images2018.cnblogs.com/blog/1228818/201803/1228818-20180303112628507-1186899766.png)
+![img](https://gitee.com/gamechanger1/image/raw/master/1228818-20180303112628507-1186899766.png)
 
 #### YARN界面
 
-![img](https://images2018.cnblogs.com/blog/1228818/201803/1228818-20180303112735895-1867837449.png)
+![img](https://gitee.com/gamechanger1/image/raw/master/1228818-20180303112735895-1867837449.png)
 
 点击Nodes可以查看节点
 
-![img](https://images2018.cnblogs.com/blog/1228818/201803/1228818-20180303112833214-1809517028.png)
+![img](https://gitee.com/gamechanger1/image/raw/master/1228818-20180303112833214-1809517028.png)
 
 
 
@@ -447,7 +447,7 @@ drwxr-xr-x   - hadoop supergroup          0 2018-03-03 11:33 /test/input
 
 
 
-![img](https://images2018.cnblogs.com/blog/1228818/201803/1228818-20180303113610630-1170857589.png)
+![img](https://gitee.com/gamechanger1/image/raw/master/1228818-20180303113610630-1170857589.png)
 
 
 
@@ -477,7 +477,7 @@ Found 1 items
 [hadoop@hadoop1 ~]$ 
 ```
 
-![img](https://images2018.cnblogs.com/blog/1228818/201803/1228818-20180303113847538-1539539423.png)
+![img](https://gitee.com/gamechanger1/image/raw/master/1228818-20180303113847538-1539539423.png)
 
 
 
@@ -497,7 +497,7 @@ hadoopdata  words.txt
 [hadoop@hadoop1 ~]$ 
 ```
 
-![img](https://images2018.cnblogs.com/blog/1228818/201803/1228818-20180303114047756-345390954.png)
+![img](https://gitee.com/gamechanger1/image/raw/master/1228818-20180303114047756-345390954.png)
 
 
 
@@ -507,11 +507,11 @@ hadoopdata  words.txt
 [hadoop@hadoop1 ~]$ hadoop jar ~/apps/hadoop-2.7.5/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.7.5.jar wordcount /test/input /test/output
 ```
 
-![img](https://images2018.cnblogs.com/blog/1228818/201803/1228818-20180303114406061-137199367.png)
+![img](https://gitee.com/gamechanger1/image/raw/master/1228818-20180303114406061-137199367.png)
 
 在YARN Web界面查看
 
-![img](https://images2018.cnblogs.com/blog/1228818/201803/1228818-20180303114707863-2058235690.png)
+![img](https://gitee.com/gamechanger1/image/raw/master/1228818-20180303114707863-2058235690.png)
 
  
 
@@ -534,6 +534,6 @@ zhangsan    1
 
 
 
-![img](https://images2018.cnblogs.com/blog/1228818/201803/1228818-20180303114542861-1807717747.png)
+![img](https://gitee.com/gamechanger1/image/raw/master/1228818-20180303114542861-1807717747.png)
 
  

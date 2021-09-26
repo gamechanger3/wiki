@@ -38,7 +38,7 @@
 
 ## HDFS读流程和写流程
 
-###### HDFS写数据流程
+### HDFS写数据流程
 
 ![图片](https://mmbiz.qpic.cn/mmbiz_png/2gY1hzDz7dRXPfxlVQkvDmENXeqxDJGibEybWuPialfwLdB0BDWSHWSjoJ4CAvUFVKxttH4MKc86scITeLFe7sag/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
@@ -58,7 +58,7 @@
 
 （8）当一个Block传输完成之后，客户端再次请求NameNode上传第二个Block的服务器。（重复执行3-7步）。
 
-###### HDFS读数据流程
+### HDFS读数据流程
 
 ![图片](https://mmbiz.qpic.cn/mmbiz_png/2gY1hzDz7dRXPfxlVQkvDmENXeqxDJGibYAar4tw8MEE0xfQ0pYsibwfJjYwXESAhcmXicEZrjXtfnOBQ6CIWk5OQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
@@ -76,15 +76,15 @@
 
 ![图片](https://mmbiz.qpic.cn/mmbiz_png/2gY1hzDz7dRXPfxlVQkvDmENXeqxDJGibVpO6PbAIPsIMbf528DoP4NmgD9NMI6UCvSg1hKcViapcjM6THOM2LhQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
-###### Fsimage
+### Fsimage
 
 Fsimage文件是HDFS文件系统元数据的一个永久性检查点，其中包含HDFS文件系统的所有目录和文件inode的序列化信息。
 
-###### Edits文件
+### Edits文件
 
 存放HDFS文件系统的所有更新操作的逻辑，文件系统客户端执行的所有写操作首先会记录大Edits文件中。
 
-###### Seen_txid
+### Seen_txid
 
 文件保存是一个数字，就是最后一个edits_的数字。
 
@@ -100,7 +100,7 @@ Fsimage文件是HDFS文件系统元数据的一个永久性检查点，其中包
 
 ![图片](https://mmbiz.qpic.cn/mmbiz_png/2gY1hzDz7dRXPfxlVQkvDmENXeqxDJGib3g1gPfN4dgibobC6HUcFTHcuVwUiaSgyBBxPic3vdyL4wiav1IyBOibTfKg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
-###### 第一阶段：NameNode启动
+### 第一阶段：NameNode启动
 
 （1）第一次启动NameNode格式化后，创建Fsimage和Edits文件。如果不是第一次启动，直接加载编辑日志和镜像文件到内存。
 
@@ -110,7 +110,7 @@ Fsimage文件是HDFS文件系统元数据的一个永久性检查点，其中包
 
 （4）NameNode在内存中对元数据进行增删改。
 
-###### 第二阶段：Secondary NameNode工作
+### 第二阶段：Secondary NameNode工作
 
 （1）Secondary NameNode询问NameNode是否需要CheckPoint。直接带回NameNode是否检查结果。
 
@@ -142,19 +142,19 @@ Fsimage文件是HDFS文件系统元数据的一个永久性检查点，其中包
 
 ![图片](https://mmbiz.qpic.cn/mmbiz_png/2gY1hzDz7dRXPfxlVQkvDmENXeqxDJGibG9UjFoSb4MtxT63ZxZiaTAl8zJf04rNeRgjNibJUSXIV96qMvNplxRLw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
-###### ZKFC
+### ZKFC
 
 ZKFC即ZKFailoverController，作为独立进程存在，负责控制NameNode的主备切换，ZKFC会监测NameNode的健康状况，当发现Active NameNode出现异常时会通过Zookeeper集群进行一次主备选举，完成Active和Standby状态的切换。
 
-###### HealthMonitor
+### HealthMonitor
 
 定时调用NameNode的HAServiceProtocol RPC接口(monitorHealth和getServiceStatus)，监控NameNode的健康状态并向ZKFC反馈。
 
-###### ActiveStandbyElector
+### ActiveStandbyElector
 
 接收ZKFC的选举请求，通过Zookeeper自动完成主备选举，选举完成后回调ZKFC的主备切换方法对NameNode进行Active和Standby状态的切换。
 
-###### JouranlNode集群
+### JouranlNode集群
 
 共享存储系统，负责存储HDFS的元数据，Active NameNode(写入)和Standby NameNode(读取)通过共享存储系统实现元数据同步，在主备切换过程中，新的Active NameNode必须确保元数据同步完成才能对外提供服务。
 
@@ -188,7 +188,7 @@ ZKFC即ZKFailoverController，作为独立进程存在，负责控制NameNode的
 
 ## 压缩
 
-###### gzip压缩
+### gzip压缩
 
 **「应用场景」**：当每个文件压缩之后在130M以内的（1个块大小内），都可以考虑用gzip压缩格式。譬如说一天或者一个小时的日志压缩成一个gzip文件，运行mapreduce程序的时候通过多个gzip文件达到并发。hive程序，streaming程序，和java写的mapreduce程序完全和文本处理一样，压缩之后原来的程序不需要做任何修改。
 
@@ -196,7 +196,7 @@ ZKFC即ZKFailoverController，作为独立进程存在，负责控制NameNode的
 
 **「缺点」**：不支持split。
 
-###### snappy压缩
+### snappy压缩
 
 **「应用场景」**：当mapreduce作业的map输出的数据比较大的时候，作为map到reduce的中间数据的压缩格式；或者作为一个mapreduce作业的输出和另外一个mapreduce作业的输入。
 
@@ -204,7 +204,7 @@ ZKFC即ZKFailoverController，作为独立进程存在，负责控制NameNode的
 
 **「缺点」**：不支持split；压缩率比gzip要低；hadoop本身不支持，需要安装；linux系统下没有对应的命令。
 
-###### lzo压缩
+### lzo压缩
 
 **「应用场景」**：一个很大的文本文件，压缩之后还大于200M以上的可以考虑，而且单个文件越大，lzo优点越越明显。
 
@@ -212,7 +212,7 @@ ZKFC即ZKFailoverController，作为独立进程存在，负责控制NameNode的
 
 **「缺点」**：压缩率比gzip要低一些；hadoop本身不支持，需要安装；在应用中对lzo格式的文件需要做一些特殊处理（为了支持split需要建索引，还需要指定inputformat为lzo格式）。
 
-###### bzip2压缩
+### bzip2压缩
 
 **「应用场景」**：适合对速度要求不高，但需要较高的压缩率的时候，可以作为mapreduce作业的输出格式；或者输出之后的数据比较大，处理之后的数据需要压缩存档减少磁盘空间并且以后数据用得比较少的情况；或者对单个很大的文本文件想压缩减少存储空间，同时又需要支持split，而且兼容之前的应用程序（即应用程序不需要修改）的情况。
 
@@ -222,7 +222,7 @@ ZKFC即ZKFailoverController，作为独立进程存在，负责控制NameNode的
 
 ## MapReduce工作流程
 
-###### MapTask工作流
+### MapTask工作流
 
 ![图片](https://mmbiz.qpic.cn/mmbiz_png/2gY1hzDz7dRXPfxlVQkvDmENXeqxDJGib1ttian1GtlwKT0cXD5CvSaSRapKaUcovnzGWQs2iblThicbBicIAo9JB1g/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
@@ -243,7 +243,7 @@ ZKFC即ZKFailoverController，作为独立进程存在，负责控制NameNode的
 
 （5）Combine阶段：当所有数据处理完成后，MapTask对所有临时文件进行一次合并，以确保最终只会生成一个数据文件。
 
-###### ReduceTask工作流
+### ReduceTask工作流
 
 ![图片](https://mmbiz.qpic.cn/mmbiz_png/2gY1hzDz7dRXPfxlVQkvDmENXeqxDJGibyyt7Aibat0X8mR6rkx86FZaF63fp4LjWpvHYagIxC5m7zgggZsBA1og/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
@@ -259,11 +259,11 @@ ZKFC即ZKFailoverController，作为独立进程存在，负责控制NameNode的
 
 ## Yarn工作流（作业提交全过程）
 
-###### 
+### 
 
 ![图片](https://mmbiz.qpic.cn/mmbiz_png/2gY1hzDz7dRXPfxlVQkvDmENXeqxDJGibbx370qcxuMOVUNaLNCLehDz3wZeraTKI5G2c8ar8ZnNGj8LqwJtsug/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
-###### 1.作业提交 
+### 1.作业提交 
 
 （1）Client调用job.waitForCompletion方法，向整个集群提交MapReduce作业。
 
@@ -275,7 +275,7 @@ ZKFC即ZKFailoverController，作为独立进程存在，负责控制NameNode的
 
 （5）Client提交完资源后，向RM申请运行MrAppMaster。
 
-###### 2.作业初始化
+### 2.作业初始化
 
 （6）当RM收到Client的请求后，将该job添加到容量调度器中。
 
@@ -285,13 +285,13 @@ ZKFC即ZKFailoverController，作为独立进程存在，负责控制NameNode的
 
 （9）下载Client提交的资源到本地。
 
-###### 3.任务分配
+### 3.任务分配
 
 （10）MrAppMaster向RM申请运行多个MapTask任务资源。
 
 （11）RM将运行MapTask任务分配给另外两个NodeManager，另两个NodeManager分别领取任务并创建容器。
 
-###### 4.任务运行
+### 4.任务运行
 
 （12）MR向两个接收到任务的NodeManager发送程序启动脚本，这两个NodeManager分别启动MapTask，MapTask对数据分区排序。
 
@@ -301,11 +301,11 @@ ZKFC即ZKFailoverController，作为独立进程存在，负责控制NameNode的
 
 （15）程序运行完毕后，MR会向RM申请注销自己。
 
-###### 5.进度和状态更新
+### 5.进度和状态更新
 
 YARN中的任务将其进度和状态(包括counter)返回给应用管理器, 客户端每秒(通过mapreduce.client.progressmonitor.pollinterval设置)向应用管理器请求进度更新, 展示给用户。
 
-###### 6.作业完成
+### 6.作业完成
 
 除了向应用管理器请求作业进度外, 客户端每5秒都会通过调用waitForCompletion()来检查作业是否完成。时间间隔可以通过mapreduce.client.completion.pollinterval来设置。作业完成之后, 应用管理器和Container会清理工作状态。作业的信息会被作业历史服务器存储以备之后用户核查。
 
@@ -313,13 +313,13 @@ YARN中的任务将其进度和状态(包括counter)返回给应用管理器, �
 
 ## Yarn调度器
 
-###### 先进先出调度器（FIFO）
+### 先进先出调度器（FIFO）
 
 ![图片](https://mmbiz.qpic.cn/mmbiz_png/2gY1hzDz7dRXPfxlVQkvDmENXeqxDJGibtMxzETJ4iahFmBb0x2BmrXEIKGkmiaSrjURHibVSJqGIdaBha9AuAq62w/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
 把应用按提交的顺序排成一个队列，这是一个先进先出队列，在进行资源分配的时候，先给队列中最头上的应用进行分配资源，待最头上的应用需求满足后再给下一个分配。
 
-###### 容量调度器（Capacity Scheduler）
+### 容量调度器（Capacity Scheduler）
 
 ![图片](https://mmbiz.qpic.cn/mmbiz_png/2gY1hzDz7dRXPfxlVQkvDmENXeqxDJGibqZ8QwjpgXT0z7CR8IPtGHOic3qoxqicIoyAxLxM8s1w1gExX9kUg9azQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
@@ -335,7 +335,7 @@ YARN中的任务将其进度和状态(包括counter)返回给应用管理器, �
 
 （4）每个队列有严格的ACL列表规定它的访问用户，每个用户可指定哪些用户允许查看自己应用程序的运行状态或者控制应用程序（比如杀死应用程序）。
 
-###### 公平调度器（Fair Scheduler）
+### 公平调度器（Fair Scheduler）
 
 ![图片](https://mmbiz.qpic.cn/mmbiz_png/2gY1hzDz7dRXPfxlVQkvDmENXeqxDJGibMiaO0msLiaZfyJy1f0OGLY3nNRmpl8uhmg1mmC3nzDTVhOBibo4YTic5wA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
@@ -353,11 +353,11 @@ YARN中的任务将其进度和状态(包括counter)返回给应用管理器, �
 
 ## HDFS小文件处理
 
-###### HDFS小文件弊端
+### HDFS小文件弊端
 
 HDFS上每个文件都要在NameNode上建立一个索引，这个索引的大小约为150byte，这样当小文件比较多的时候，就会产生很多的索引文件，一方面会大量占用NameNode的内存空间，另一方面就是索引文件过大使得索引速度变慢。
 
-###### HDFS小文件解决方案
+### HDFS小文件解决方案
 
 （1） Hadoop Archive Hadoop Archive或者HAR，是一个高效地将小文件放入HDFS块中的文件存档工具，它能够将多个小文件打包成一个HAR文件，这样在减少namenode内存使用的同时，仍然允许对文件进行透明的访问。
 
@@ -371,39 +371,39 @@ HDFS上每个文件都要在NameNode上建立一个索引，这个索引的大�
 
 ## Shuffle及优化
 
-###### Shuffle过程
+### Shuffle过程
 
 Map方法之后，Reduce方法之前的数据处理过程称之为Shuffle
 
 参考上面：**MapReduce工作流程**
 
-###### Map阶段优化
+### Map阶段优化
 
 （1）增大环形缓冲区大小。由100m扩大到200m （2）增大环形缓冲区溢写的比例。由80%扩大到90% （3）减少对溢写文件的merge次数。（10个文件，一次20个merge） （4）不影响实际业务的前提下，采用Combiner提前合并，减少 I/O。
 
-###### Reduce阶段优化
+### Reduce阶段优化
 
 （1）合理设置Map和Reduce数：两个都不能设置太少，也不能设置太多。太少，会导致Task等待，延长处理时间；太多，会导致 Map、Reduce任务间竞争资源，造成处理超时等错误。（2）设置Map、Reduce共存：调整slowstart.completedmaps参数，使Map运行到一定程度后，Reduce也开始运行，减少Reduce的等待时间。（3）规避使用Reduce，因为Reduce在用于连接数据集的时候将会产生大量的网络消耗。（4）增加每个Reduce去Map中拿数据的并行数 （5）集群性能可以的前提下，增大Reduce端存储数据内存的大小。
 
-###### IO传输
+### IO传输
 
 采用数据压缩的方式，减少网络IO的的时间。安装Snappy和LZOP压缩编码器。压缩：（1）map输入端主要考虑数据量大小和切片，支持切片的有Bzip2、LZO。注意：LZO要想支持切片必须创建索引；（2）map输出端主要考虑速度，速度快的snappy、LZO；（3）reduce输出端主要看具体需求，例如作为下一个mr输入需要考虑切片，永久保存考虑压缩率比较大的gzip。
 
-###### 其他Shuffle优化参考下文：参数优化
+### 其他Shuffle优化参考下文：参数优化
 
 ------
 
 ## Hadoop解决数据倾斜方法
 
-###### 可以参考hive，spark，flink数据倾斜
+### 可以参考hive，spark，flink数据倾斜
 
-###### [一文掌握各计算引擎如何处理数据倾斜](http://mp.weixin.qq.com/s?__biz=MzIxMjI3NTI5OQ==&mid=2650463897&idx=1&sn=c0456791b591ea15df0558c494287edd&chksm=8f46e795b8316e837d84785d351a1fbc12d1a4dd1876c39a5cb79fd0c5c268d40de7e701bc30&scene=21#wechat_redirect)
+### [一文掌握各计算引擎如何处理数据倾斜](http://mp.weixin.qq.com/s?__biz=MzIxMjI3NTI5OQ==&mid=2650463897&idx=1&sn=c0456791b591ea15df0558c494287edd&chksm=8f46e795b8316e837d84785d351a1fbc12d1a4dd1876c39a5cb79fd0c5c268d40de7e701bc30&scene=21#wechat_redirect)
 
-###### 提前在map进行combine，减少传输的数据量
+### 提前在map进行combine，减少传输的数据量
 
 在Mapper加上combiner相当于提前进行reduce，即把一个Mapper中的相同key进行了聚合，减少shuffle过程中传输的数据量，以及Reducer端的计算量。如果导致数据倾斜的key大量分布在不同的mapper的时候，这种方法就不是很有效了。
 
-###### 导致数据倾斜的key 大量分布在不同的mapper
+### 导致数据倾斜的key 大量分布在不同的mapper
 
 （1）局部聚合加全局聚合。
 
@@ -419,7 +419,7 @@ Map方法之后，Reduce方法之前的数据处理过程称之为Shuffle
 
 ## Hadoop的参数优化
 
-###### 资源相关参数
+### 资源相关参数
 
 | 配置参数                                      | 参数说明                                                     |
 | :-------------------------------------------- | :----------------------------------------------------------- |
@@ -431,7 +431,7 @@ Map方法之后，Reduce方法之前的数据处理过程称之为Shuffle
 | mapreduce.reduce.shuffle.input.buffer.percent | Buffer中的数据达到多少比例开始写入磁盘。默认值0.66           |
 | mapreduce.reduce.input.buffer.percent         | Buffer大小占Reduce可用内存的比例。默认值0.7 指定多少比例的内存用来存放Buffer中的数据，默认值是0.0 |
 
-###### YARN
+### YARN
 
 | 配置参数                                 | 参数说明                                        |
 | :--------------------------------------- | :---------------------------------------------- |
@@ -441,14 +441,14 @@ Map方法之后，Reduce方法之前的数据处理过程称之为Shuffle
 | yarn.scheduler.maximum-allocation-vcores | 每个Container申请的最大CPU核数，默认值：32      |
 | yarn.nodemanager.resource.memory-mb      | 给Containers分配的最大物理内存，默认值：8192    |
 
-###### Shuffle
+### Shuffle
 
 | 配置参数                         | 参数说明                          |
 | :------------------------------- | :-------------------------------- |
 | mapreduce.task.io.sort.mb        | Shuffle的环形缓冲区大小，默认100m |
 | mapreduce.map.sort.spill.percent | 环形缓冲区溢出的阈值，默认80%     |
 
-###### 容错相关参数
+### 容错相关参数
 
 | 配置参数                     | 参数说明                                                     |
 | :--------------------------- | :----------------------------------------------------------- |
@@ -462,7 +462,7 @@ Map方法之后，Reduce方法之前的数据处理过程称之为Shuffle
 
 所谓的异构存储就是将不同需求或者冷热的数据存储到不同的介质中去，实现既能兼顾性能又能兼顾成本。
 
-###### 存储类型
+### 存储类型
 
 HDFS异构存储支持如下4种类型，分别是：
 
@@ -473,7 +473,7 @@ HDFS异构存储支持如下4种类型，分别是：
 
 以上四种自上到下，速度由快到慢，单位存储成本由高到低。
 
-###### 存储策略
+### 存储策略
 
 HDFS总共支持Lazy_Persist、All_SSD、One_SSD、Hot、Warm和Cold等6种存储策略。
 
