@@ -8,8 +8,6 @@ Excel是我们工作中经常使用的一种工具，对于数据分析来说，
 
 Excel函数分类：关联匹配类、清洗处理类、逻辑运算类、计算统计类、时间 序列类由于篇幅过长，本篇先分享关联匹配类和清洗处理类，其余三个在明 日推文第三条继续分享。
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps2.png)
-
 ## 关联匹配类
 
 经常性的， 需要的数据不在同一个excel表或同一个excel表不同sheet中， 数据太 多， copy麻烦也不准确， 如何整合呢？ 这类函数就是 用于多表关联或者行列比对时 的场景，而且表越复杂，用得越多。
@@ -24,7 +22,7 @@ Excel函数分类：关联匹配类、清洗处理类、逻辑运算类、计算
 
 (1) 单表查找
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps3.jpg) 
+![img](https://gitee.com/gamechanger1/image/raw/master/wps3.jpg) 
 
 把选手Tian的战队找到之后， 接下来把鼠标放到G8 单元格右下角位置， 出现十字符
 
@@ -32,7 +30,7 @@ Excel函数分类：关联匹配类、清洗处理类、逻辑运算类、计算
 
 假设我有一个工资表格文件，里面每个部门有一张表，有4个部门对应的部门工资表 和一个需要查询工资的查询表，为方便说明这里的姓名取方便识别的编号，你也可以 用真正的姓名。
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps4.jpg) 
+![img](https://gitee.com/gamechanger1/image/raw/master/wps4.jpg) 
 
 在查询表中， 要求根据提供的姓名， 从销售~ 人事 4 个工作表中查询该员工的基本工
 
@@ -58,7 +56,7 @@ Excel函数分类：关联匹配类、清洗处理类、逻辑运算类、计算
 
  
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps10.jpg) 
+![img](https://gitee.com/gamechanger1/image/raw/master/wps10.jpg) 
 
 ### **2.** HLOOKUP
 
@@ -78,7 +76,7 @@ Excel函数分类：关联匹配类、清洗处理类、逻辑运算类、计算
 
 语法：= INDEX(要返回值的单元格区域或数组,所在行,所在列)
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps12.jpg) 
+![image](https://gitee.com/gamechanger1/image/raw/master/Image_012.jpg) 
 
 ### **4.** MATCH
 
@@ -86,7 +84,7 @@ Excel函数分类：关联匹配类、清洗处理类、逻辑运算类、计算
 
 语法：= MATCH ( 要查找的值， 查找的区域， 查找方式)， 查找方式 0 为等于查找 值，1为小于查找值，-1为大于查找值
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps13.png)
+![image](https://gitee.com/gamechanger1/image/raw/master/Image_013.png)
 
 ### **5.** RANK
 
@@ -94,7 +92,7 @@ Excel函数分类：关联匹配类、清洗处理类、逻辑运算类、计算
 
 语法：=RANK(参与排名的数值, 排名的数值区域, 排名方式-0是降序-1是升序-默认 为0）。
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps14.png)
+![image](https://gitee.com/gamechanger1/image/raw/master/Image_014.png)
 
 ### **6.** Row
 
@@ -102,7 +100,7 @@ Excel函数分类：关联匹配类、清洗处理类、逻辑运算类、计算
 
 语法：ROW()或ROW(某个单元格)
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps15.png)
+![image](https://gitee.com/gamechanger1/image/raw/master/Image_015.png)
 
 ### **7.** Column
 
@@ -118,9 +116,7 @@ Excel函数分类：关联匹配类、清洗处理类、逻辑运算类、计算
 
 语法： ＝Offset（ 指定点， 偏移多少行( 正数向下， 负数向上)， 偏移多少列( 正数向 右，负数向左)，返回多少行，返回多少列）
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps17.jpg) 
-
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps18.png)
+![image](https://gitee.com/gamechanger1/image/raw/master/Image_017.jpg) 
 
 ##  清洗处理类
 
@@ -150,7 +146,7 @@ Excel函数分类：关联匹配类、清洗处理类、逻辑运算类、计算
 
 合 并 单 元 格 中 的 内 容 ， 还 有 另 一 种 合 并 方 式 是 & ， 需 要 合 并 的 内 容 过 多 时 ， concatenate效率更快。
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps28.png)
+![image](https://gitee.com/gamechanger1/image/raw/master/Image_028.png)
 
 ### **3.** Left
 
@@ -158,7 +154,7 @@ Excel函数分类：关联匹配类、清洗处理类、逻辑运算类、计算
 
 语法：=Left(值所在单元格，截取长度)
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps29.png)
+![image](https://gitee.com/gamechanger1/image/raw/master/Image_029.png)
 
 ### **4.** Right
 
@@ -196,7 +192,7 @@ Text函数表示将数值转化为自己想要的文本格式，语法：
 
 ![img](https://gitee.com/gamechanger1/image/raw/master/wps33.png)
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps34.jpg) 
+![image](https://gitee.com/gamechanger1/image/raw/master/Image_034.jpg) 
 
 
 
@@ -206,11 +202,11 @@ Text函数表示将数值转化为自己想要的文本格式，语法：
 
 语法：=Find（要查找字符，指定字符串，从第几个字符开始查起
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps35.jpg) 
+![image](https://gitee.com/gamechanger1/image/raw/master/Image_035.jpg) 
 
  
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps36.jpg) 
+![image](https://gitee.com/gamechanger1/image/raw/master/Image_036.jpg) 
 
 ### **9.** Search
 
@@ -228,7 +224,7 @@ Find和Search这两个函数功能几乎相同，实现查找字符所在的位�
 
 字符串是指包含数字、字母、符号等的一串字符。
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps38.jpg) 
+![image](https://gitee.com/gamechanger1/image/raw/master/Image_038.jpg) 
 
 ### **11.** Lenb
 
@@ -236,7 +232,7 @@ Find和Search这两个函数功能几乎相同，实现查找字符所在的位�
 
 区别在于，len是按字符数计算的、lenb是按字节数计算的。数字、字母、英文、标 点符号（半角状态下输入的哦）都是按1计算的，汉字、全角状态下的标点符号，每 个字符按2计算。
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps39.jpg) 
+![image](https://gitee.com/gamechanger1/image/raw/master/Image_039.jpg) 
 
 综合应用：
 
@@ -248,7 +244,7 @@ Find和Search这两个函数功能几乎相同，实现查找字符所在的位�
 
 如果含有字段Python或java中的任何一个则为本身，否则为"0"，* 代表任意内容， 之后就可以通过Excel的筛选功能，把B列的"0"筛选掉。
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps41.png) 
+![image](https://gitee.com/gamechanger1/image/raw/master/Image_041.jpg) 
 
 ### **12.** VALUE
 
@@ -256,11 +252,9 @@ Find和Search这两个函数功能几乎相同，实现查找字符所在的位�
 
 功能：将所选区域转为文本类型
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps42.png) 
+![image](https://gitee.com/gamechanger1/image/raw/master/Image_042.jpg) 
 
- 
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps44.png)
 
 ##  逻辑运算类
 
@@ -272,7 +266,7 @@ Find和Search这两个函数功能几乎相同，实现查找字符所在的位�
 
 语法：=IF(条件, true时返回值, false返回值)
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps45.jpg) 
+![image](https://gitee.com/gamechanger1/image/raw/master/Image_045.jpg) 
 
 ### **2.** AND
 
@@ -289,8 +283,6 @@ Find和Search这两个函数功能几乎相同，实现查找字符所在的位�
 语法：只要参数有一个True，则返回Ture，经常用于多条件判断。
 
 ![img](https://gitee.com/gamechanger1/image/raw/master/wps47.png)
-
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps48.png)
 
 ##  计算统计类
 
@@ -334,19 +326,19 @@ Find和Search这两个函数功能几乎相同，实现查找字符所在的位�
 
 功能：计算某区域中的平均值
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps64.png)
+![img](https://gitee.com/gamechanger1/image/raw/master/wps64.png)
 
 ### **4.** COUNT
 
 功能：计算纯数字的单元格的个数
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps65.png)
+![img](https://gitee.com/gamechanger1/image/raw/master/wps65.png)
 
 **5.** **COUNTIF**
 
 功能：计算某个区域中满足给定条件的单元格数目 语法：=COUNTIF(单元格1: 单元格2 ,条件)
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps66.png)
+![img](https://gitee.com/gamechanger1/image/raw/master/wps66.png)
 
 ### **6.** COUNTIFS
 
@@ -354,7 +346,7 @@ Find和Search这两个函数功能几乎相同，实现查找字符所在的位�
 
 语法：=COUNTIFS( 第一个条件区域， 第一个对应的条件， 第二个条件区域， 第二 个对应的条件，第N个条件区域，第N个对应的条件)
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps67.png)
+![img](https://gitee.com/gamechanger1/image/raw/master/wps67.png)
 
 ### **7.** SUM
 
@@ -368,7 +360,7 @@ Find和Search这两个函数功能几乎相同，实现查找字符所在的位�
 
 语法：=SUMIF(单元格1: 单元格2 ,条件,单元格3: 单元格4)
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps69.png)
+![img](https://gitee.com/gamechanger1/image/raw/master/wps69.png)
 
 ### **9.** SUMPRODUCT
 
@@ -376,13 +368,13 @@ Find和Search这两个函数功能几乎相同，实现查找字符所在的位�
 
 语法：=SUMPRODUCT(单元格1: 单元格2 ,单元格3: 单元格4)
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps70.png)
+![img](https://gitee.com/gamechanger1/image/raw/master/wps70.png)
 
 ### **10.** Stdev
 
 统计型函数，求标准差，衡量离散程度。
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps71.jpg) 
+![img](https://gitee.com/gamechanger1/image/raw/master/wps71.jpg) 
 
 **11.** **Subtotal**
 
@@ -418,17 +410,17 @@ round(3.1415,2)=3.14 ;
 
 round(3.1415,1)=3.1
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps73.png)
+![img](https://gitee.com/gamechanger1/image/raw/master/wps73.png)
 
 ![img](https://gitee.com/gamechanger1/image/raw/master/wps74.png)
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps75.png)
+![img](https://gitee.com/gamechanger1/image/raw/master/wps75.png)
 
 MOD
 
 ![img](https://gitee.com/gamechanger1/image/raw/master/wps76.png)
 
-## 时间处理类
+## 时间序列类
 
 专门用于处理时间格式以及转换。
 
@@ -448,9 +440,7 @@ WEEKDAY函数：返回对应于某个日期的一周中的第几天。 Datedif�
 
 语法：=TODAY()，如不显示应该是单元格格式问题，单元格格式应是常规或日期型
 
- 
-
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps77.jpg) 
+![img](https://gitee.com/gamechanger1/image/raw/master/wps77.jpg) 
 
 ### **2.** NOW
 
@@ -470,13 +460,13 @@ WEEKDAY函数：返回对应于某个日期的一周中的第几天。 Datedif�
 
 语法：=MONTH(日期)
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps80.jpg) 
+![img](https://gitee.com/gamechanger1/image/raw/master/wps80.jpg) 
 
 ### **5.** DAY
 
 功能：返回以序列数表示的某日期的天数 语法：=DAY(日期)
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps81.jpg) 
+![img](https://gitee.com/gamechanger1/image/raw/master/wps81.jpg) 
 
 ### **6.** WEEKDAY
 
