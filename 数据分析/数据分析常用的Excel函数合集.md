@@ -40,19 +40,19 @@ Excel函数分类：关联匹配类、清洗处理类、逻辑运算类、计算
 
 如果，我们知道A1是销售部的，那么公式可以写为：
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps6.png)=VLOOKUP(A2,销售!A:C,3,0)
+=VLOOKUP(A2,销售!A:C,3,0)
 
 如果，我们知道A1可能在销售或财务表这2个表中，公式可以写为：
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps7.png)=IFERROR(VLOOKUP(A2,销售!A:C,3,0),VLOOKUP(A2,财务!A:C,3,0))
+=IFERROR(VLOOKUP(A2,销售!A:C,3,0),VLOOKUP(A2,财务!A:C,3,0))
 
 意思是，如果在销售表中查找不到(用IFERROR函数判断)，则去财务表中再查找。 如果，我们知道A1可能在销售、财务或服务表中，公式可以再次改为：
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps8.png)=IFERROR(VLOOKUP(A2,销售!A:C,3,0),IFERROR(VLOOKUP(A2,财 务!A:C,3,0),VLOOKUP(A2,服务!A:C,3,0)))
+=IFERROR(VLOOKUP(A2,销售!A:C,3,0),IFERROR(VLOOKUP(A2,财 务!A:C,3,0),VLOOKUP(A2,服务!A:C,3,0)))
 
 如果， 有更多的表， 如本例中 4 个表， 那就一层层的套用下去， 如果 4 个表都查不到 就设置为"无此人信息"：
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps9.png)=IFERROR(VLOOKUP(A2,销售!A:C,3,0),IFERROR(VLOOKUP(A2,财 务!A:C,3,0),IFERROR(VLOOKUP(A2,服务!A:C,3,0),IFERROR(VLOOKUP(A2,人 事!A:C,3,0),"无此人信息"))))
+=IFERROR(VLOOKUP(A2,销售!A:C,3,0),IFERROR(VLOOKUP(A2,财 务!A:C,3,0),IFERROR(VLOOKUP(A2,服务!A:C,3,0),IFERROR(VLOOKUP(A2,人 事!A:C,3,0),"无此人信息"))))
 
  
 
@@ -124,11 +124,11 @@ Excel函数分类：关联匹配类、清洗处理类、逻辑运算类、计算
 
 ![img](https://gitee.com/gamechanger1/image/raw/master/wps19.png)清除字符串前后空格：使用Trim
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps20.png)合并单元格：使用concatenate
+![img](https://gitee.com/gamechanger1/image/raw/master/wps19.png)合并单元格：使用concatenate
 
 ![img](https://gitee.com/gamechanger1/image/raw/master/wps21.png)截取字符串：使用Left/Right/Mid
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps22.png)![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps23.png)![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps24.png)替换单元格中内容：Replace/Substitute 查找文本在单元格中的位置：Find/Search 获取字符长度：Len/Lenb
+![img](https://gitee.com/gamechanger1/image/raw/master/wps19.png)![img](https://gitee.com/gamechanger1/image/raw/master/wps19.png)![img](https://gitee.com/gamechanger1/image/raw/master/wps19.png)替换单元格中内容：Replace/Substitute 查找文本在单元格中的位置：Find/Search 获取字符长度：Len/Lenb
 
 ![img](https://gitee.com/gamechanger1/image/raw/master/wps25.png)![img](https://gitee.com/gamechanger1/image/raw/master/wps26.png)筛选包含某个条件的 内容：IF+OR+COUNTIF 转换数据类型：VALUE/TEXT
 
@@ -292,25 +292,27 @@ Find和Search这两个函数功能几乎相同，实现查找字符所在的位�
 
  
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps49.png)MIN函数：找到某区域中的最小值
+![img](https://gitee.com/gamechanger1/image/raw/master/wps19.png)MIN函数：找到某区域中的最小值
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps50.png)MAX函数：找到某区域中的最大值
+![img](https://gitee.com/gamechanger1/image/raw/master/wps19.png)MAX函数：找到某区域中的最大值
 
 ![img](https://gitee.com/gamechanger1/image/raw/master/wps51.png)AVERAGE函数：计算某区域中的平均值
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps52.png)COUNT函数： 计算某区域中包含数字的单元格的数目
+![img](https://gitee.com/gamechanger1/image/raw/master/wps19.png)COUNT函数： 计算某区域中包含数字的单元格的数目
 
-![img](https://gitee.com/gamechanger1/image/raw/master/wps53.png)![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps54.png)COUNTIF函数：计算某个区域中满足给定条件的单元格数目 COUNTIFS函数：统计一组给定条件所指定的单元格数
+![img](https://gitee.com/gamechanger1/image/raw/master/wps53.png)![img](https://gitee.com/gamechanger1/image/raw/master/wps19.png)COUNTIF函数：计算某个区域中满足给定条件的单元格数目 COUNTIFS函数：统计一组给定条件所指定的单元格数
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps55.png)![img](https://gitee.com/gamechanger1/image/raw/master/wps56.png)SUM函数：计算单元格区域中所有数值的和 SUMIF函数：对满足条件的单元格求和
+![img](https://gitee.com/gamechanger1/image/raw/master/wps19.png)![img](https://gitee.com/gamechanger1/image/raw/master/wps56.png)SUM函数：计算单元格区域中所有数值的和 SUMIF函数：对满足条件的单元格求和
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps57.png)![img](https://gitee.com/gamechanger1/image/raw/master/wps58.png)SUMPRODUCT函数：返回相应的数组或区域乘积的和 STDEV函数：求标准差
+![img](https://gitee.com/gamechanger1/image/raw/master/wps19.png)![img](https://gitee.com/gamechanger1/image/raw/master/wps58.png)SUMPRODUCT函数：返回相应的数组或区域乘积的和 STDEV函数：求标准差
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps59.png)SUBTOTAL函数：汇总型函数，将平均值、计数、最大最小、相乘、标准差、 求和、方差等参数化
+![img](https://gitee.com/gamechanger1/image/raw/master/wps19.png)SUBTOTAL函数：汇总型函数，将平均值、计数、最大最小、相乘、标准差、 求和、方差等参数化
 
-![img](C:\Users\UML-DEV\AppData\Local\Temp\ksohtml16492\wps60.png)INT/ROUND函数：取整函数，int向下取整，round按小数位取数
+![img](https://gitee.com/gamechanger1/image/raw/master/wps19.png)INT/ROUND函数：取整函数，int向下取整，round按小数位取数
 
-### ![img](https://gitee.com/gamechanger1/image/raw/master/wps61.png)MOD函数：取余 1. MIN
+![img](https://gitee.com/gamechanger1/image/raw/master/wps61.png)MOD函数：取余 
+
+### 1. MIN
 
 功能：找到某区域中的最小值
 
