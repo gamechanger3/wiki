@@ -87,7 +87,7 @@
 - [Hadoop（十二）MR示例](数据开发/Hadoop/Hadoop（12）MR示例.md)
 - [Hadoop（十三）Hadoop重难点：Shuffle过程中的环形缓冲区](数据开发/Hadoop/Hadoop（13）Hadoop重难点：Shuffle过程中的环形缓冲区.md)
 - [Hadoop（最后）Hadoop面试题](数据开发/Hadoop/Hadoop面试题.md)
-- [docx](数据开发/Hadoop/README.docx)
+
 
 ### Zookeeper
 
@@ -182,9 +182,13 @@
 
 ## 🚓 数据分析
 
+### 方法论
+- [常用的数据分析方法](数据分析/9种常用的数据分析方法.md)
+
 ### SQL
 
 ### Excel
+- [数据分析常用的Excel函数合集](数据分析/数据分析常用的Excel函数合集.md)
 
 ### Python
 
