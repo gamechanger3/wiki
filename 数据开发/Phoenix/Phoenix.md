@@ -32,31 +32,33 @@ Phoenix = HBase + SQL
 
 5. 如果需要启用二级索引，需要修改Hbase regionserver的配置文件hbase-site.xml，并将hbase-site.xml复制到phoenix/bin目录下，还有hadoop的core-site.xml、hdfs-site.xml也复制到phoenix/bin目录下
 
-  > <--! 建议zk只写最后一个端口，不然phoenix建索引时可能会出错-->
-  >
-  > <property>
-  >    <name>hbase.zookeeper.quorum</name>
-  >    <value>hadoop01,hadoop02,hadoop03:2181</value>
-  > </property>
-  >
-  > <property>
-  >   <name>hbase.regionserver.wal.codec</name>
-  >   <value>org.apache.hadoop.hbase.regionserver.wal.IndexedWALEditCodec</value>
-  > </property>
-  >
-  > <property>
-  >   <name>hbase.region.server.rpc.scheduler.factory.class</name>
-  >   <value>org.apache.hadoop.hbase.ipc.PhoenixRpcSchedulerFactory</value>
-  >   <description>Factory to create the Phoenix RPC Scheduler that uses separate queues for index and metadata updates</description>
-  > </property>
-  >
-  > <property>
-  >   <name>hbase.rpc.controllerfactory.class</name>
-  >   <value>org.apache.hadoop.hbase.ipc.controller.ServerRpcControllerFactory</value>
-  >   <description>Factory to create the Phoenix RPC Scheduler that uses separate queues for index and metadata updates</description>
-  > </property>
+```xml
+<--! 建议zk只写最后一个端口，不然phoenix建索引时可能会出错-->
 
-6. **注**：如果phoenix版本低，还需配置HMaster的hbase-site.xml，配置参考网上
+<property>
+<name>hbase.zookeeper.quorum</name>
+<value>hadoop01,hadoop02,hadoop03:2181</value>
+</property>
+
+<property>
+<name>hbase.regionserver.wal.codec</name>
+<value>org.apache.hadoop.hbase.regionserver.wal.IndexedWALEditCodec</value>
+</property>
+
+<property>
+<name>hbase.region.server.rpc.scheduler.factory.class</name>
+<value>org.apache.hadoop.hbase.ipc.PhoenixRpcSchedulerFactory</value>
+<description>Factory to create the Phoenix RPC Scheduler that uses separate queues for index and metadata updates</description>
+</property>
+
+<property>
+<name>hbase.rpc.controllerfactory.class</name>
+<value>org.apache.hadoop.hbase.ipc.controller.ServerRpcControllerFactory</value>
+<description>Factory to create the Phoenix RPC Scheduler that uses separate queues for index and metadata updates</description>
+</property>
+```
+
+6. **注**：如果phoenix版本低于4.8，还需配置HMaster的hbase-site.xml，配置参考网上
 
 ### 启动phoenix
 
@@ -67,7 +69,7 @@ Phoenix = HBase + SQL
   > export PHOENIX_HOME=/opt/hadoop/phoenix
   > export PATH=$PHOENIX_HOME/bin:$PATH
 
-- phoenix/bin目录下执行 ./sqlline.py hadoop01,hadoop02,hadoop03:2181 后面为hbase的zk地址
+- phoenix/bin目录下执行 ./sqlline.py hadoop01,hadoop02,hadoop03:2181 后面为hbase的zk地址，一个host也行
 
 - !table 可看到phoenix现存的system表
 
