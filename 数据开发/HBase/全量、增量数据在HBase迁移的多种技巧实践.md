@@ -1,3 +1,7 @@
+<p align="center">
+    <img width="280px" src="image/konglong/m6.png" >
+</p>
+
 # [全量、增量数据在HBase迁移的多种技巧实践](https://my.oschina.net/u/4439378/blog/5491479)
 
 作者经历了多次基于HBase实现全量与增量数据的迁移测试，总结了在使用HBase进行数据迁移的多种实践，本文针对全量与增量数据迁移的场景不同，提供了1+2的技巧分享。
