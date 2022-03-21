@@ -130,6 +130,7 @@
 - [HBase（十）一条数据的HBase之旅-Write全流程](数据开发/HBase/HBase（10）一条数据的HBase之旅-Write全流程.md)
 - [HBase（十一）一条数据的HBase之旅-Flush与Compaction](数据开发/HBase/HBase（11）一条数据的HBase之旅-Flush与Compaction.md)
 - [HBase（十二）图解HBase读取流程](数据开发/HBase/HBase（12）图解HBase读取流程.md)
+- [全量、增量数据在HBase迁移的多种技巧实践](数据开发/HBase/全量、增量数据在HBase迁移的多种技巧实践.md)
 
 ### Phoenix
 
