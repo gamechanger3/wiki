@@ -182,6 +182,7 @@
 ### 其他
 - [Maven Jar包冲突解决](other/Maven-Jar包冲突解决.md)
 - [Spark的jar包冲突终极解决方案](other/Spark的jar包冲突终极解决方案.md)
+- [Redis](other/Redis.md)
 
 ## 🚓 数据分析
 
